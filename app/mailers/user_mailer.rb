@@ -2,8 +2,8 @@ class UserMailer < ApplicationMailer
     default from: "registrations@matemypet.com"
 
     def welcome_email
-        @user = params[:username]
+        @email = params[:email]
         @otp  = params[:otp]
-        mail(to: "atefhamosa@gmail.com", subject: 'Welcome to My Awesome Site')
+        mail(to: @email, subject: 'Welcome to Mate My Pet')
     end
 end

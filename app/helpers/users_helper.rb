@@ -15,6 +15,6 @@ module UsersHelper
       user.otp_code = rand(1000..9999)
       user.save
 
-      UserMailer.with(user_name: user.first_name, otp: user.otp_code).welcome_email.deliver_later
+      UserMailer.with(email: user.email, otp: user.otp_code).welcome_email.deliver_later
     end
 end

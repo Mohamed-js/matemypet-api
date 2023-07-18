@@ -1,0 +1,11 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  animal_id: 1
+  url: MyText
+  caption: MyString
+
+two:
+  animal_id: 1
+  url: MyText
+  caption: MyString

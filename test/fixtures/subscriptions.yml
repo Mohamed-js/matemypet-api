@@ -1,0 +1,19 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  user_id: 1
+  tier_id: 1
+  has_unlimited_likes: false
+  likes: 1
+  max_file_size: 1
+  pets: 1
+  ads: false
+
+two:
+  user_id: 1
+  tier_id: 1
+  has_unlimited_likes: false
+  likes: 1
+  max_file_size: 1
+  pets: 1
+  ads: false

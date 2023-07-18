@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @dislike %>
+
+<div>
+  <%= link_to "Edit this dislike", edit_dislike_path(@dislike) %> |
+  <%= link_to "Back to dislikes", dislikes_path %>
+
+  <%= button_to "Destroy this dislike", @dislike, method: :delete %>
+</div>

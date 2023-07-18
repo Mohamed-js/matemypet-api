@@ -1,0 +1,52 @@
+<%= form_with(model: ad_view) do |form| %>
+  <% if ad_view.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(ad_view.errors.count, "error") %> prohibited this ad_view from being saved:</h2>
+
+      <ul>
+        <% ad_view.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :is_liked, style: "display: block" %>
+    <%= form.check_box :is_liked %>
+  </div>
+
+  <div>
+    <%= form.label :longitude, style: "display: block" %>
+    <%= form.text_field :longitude %>
+  </div>
+
+  <div>
+    <%= form.label :latitude, style: "display: block" %>
+    <%= form.text_field :latitude %>
+  </div>
+
+  <div>
+    <%= form.label :country, style: "display: block" %>
+    <%= form.text_field :country %>
+  </div>
+
+  <div>
+    <%= form.label :city, style: "display: block" %>
+    <%= form.text_field :city %>
+  </div>
+
+  <div>
+    <%= form.label :ad_id, style: "display: block" %>
+    <%= form.number_field :ad_id %>
+  </div>
+
+  <div>
+    <%= form.label :user_id, style: "display: block" %>
+    <%= form.number_field :user_id %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>

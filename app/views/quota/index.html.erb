@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Quota</h1>
+
+<div id="quota">
+  <% @quota.each do |quotum| %>
+    <%= render quotum %>
+    <p>
+      <%= link_to "Show this quotum", quotum %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New quotum", new_quotum_path %>

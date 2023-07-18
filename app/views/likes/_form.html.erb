@@ -1,0 +1,42 @@
+<%= form_with(model: like) do |form| %>
+  <% if like.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(like.errors.count, "error") %> prohibited this like from being saved:</h2>
+
+      <ul>
+        <% like.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :liker_animal_id, style: "display: block" %>
+    <%= form.number_field :liker_animal_id %>
+  </div>
+
+  <div>
+    <%= form.label :liker_user_id, style: "display: block" %>
+    <%= form.number_field :liker_user_id %>
+  </div>
+
+  <div>
+    <%= form.label :liked_animal_id, style: "display: block" %>
+    <%= form.number_field :liked_animal_id %>
+  </div>
+
+  <div>
+    <%= form.label :liked_user_id, style: "display: block" %>
+    <%= form.number_field :liked_user_id %>
+  </div>
+
+  <div>
+    <%= form.label :is_liked_back, style: "display: block" %>
+    <%= form.check_box :is_liked_back %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>

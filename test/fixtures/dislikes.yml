@@ -1,0 +1,11 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  disliker_animal_id: 1
+  disliker_user_id: 1
+  disliked_animal_id: 1
+
+two:
+  disliker_animal_id: 1
+  disliker_user_id: 1
+  disliked_animal_id: 1

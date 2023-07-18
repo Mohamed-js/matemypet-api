@@ -1,0 +1,32 @@
+<%= form_with(model: dislike) do |form| %>
+  <% if dislike.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(dislike.errors.count, "error") %> prohibited this dislike from being saved:</h2>
+
+      <ul>
+        <% dislike.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :disliker_animal_id, style: "display: block" %>
+    <%= form.number_field :disliker_animal_id %>
+  </div>
+
+  <div>
+    <%= form.label :disliker_user_id, style: "display: block" %>
+    <%= form.number_field :disliker_user_id %>
+  </div>
+
+  <div>
+    <%= form.label :disliked_animal_id, style: "display: block" %>
+    <%= form.number_field :disliked_animal_id %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>

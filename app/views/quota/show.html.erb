@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @quotum %>
+
+<div>
+  <%= link_to "Edit this quotum", edit_quotum_path(@quotum) %> |
+  <%= link_to "Back to quota", quota_path %>
+
+  <%= button_to "Destroy this quotum", @quotum, method: :delete %>
+</div>

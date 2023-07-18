@@ -1,0 +1,17 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  likes: 1
+  max_file_size: 1
+  pets: 1
+  ads: false
+  has_unlimited_likes: false
+
+two:
+  name: MyString
+  likes: 1
+  max_file_size: 1
+  pets: 1
+  ads: false
+  has_unlimited_likes: false

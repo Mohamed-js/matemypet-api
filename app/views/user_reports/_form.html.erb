@@ -1,0 +1,47 @@
+<%= form_with(model: user_report) do |form| %>
+  <% if user_report.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(user_report.errors.count, "error") %> prohibited this user_report from being saved:</h2>
+
+      <ul>
+        <% user_report.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :user_id, style: "display: block" %>
+    <%= form.number_field :user_id %>
+  </div>
+
+  <div>
+    <%= form.label :reported_id, style: "display: block" %>
+    <%= form.number_field :reported_id %>
+  </div>
+
+  <div>
+    <%= form.label :reported_type, style: "display: block" %>
+    <%= form.text_field :reported_type %>
+  </div>
+
+  <div>
+    <%= form.label :body, style: "display: block" %>
+    <%= form.text_area :body %>
+  </div>
+
+  <div>
+    <%= form.label :image, style: "display: block" %>
+    <%= form.text_area :image %>
+  </div>
+
+  <div>
+    <%= form.label :read, style: "display: block" %>
+    <%= form.check_box :read %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>

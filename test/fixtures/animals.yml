@@ -1,0 +1,23 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  user_id: 1
+  breed_id: 1
+  name: MyString
+  gender: MyString
+  bio: MyText
+  dob: 2023-04-13 21:53:46
+  vaccinated: false
+  longitude: MyString
+  latitude: MyString
+
+two:
+  user_id: 1
+  breed_id: 1
+  name: MyString
+  gender: MyString
+  bio: MyText
+  dob: 2023-04-13 21:53:46
+  vaccinated: false
+  longitude: MyString
+  latitude: MyString

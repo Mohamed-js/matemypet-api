@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Dislikes</h1>
+
+<div id="dislikes">
+  <% @dislikes.each do |dislike| %>
+    <%= render dislike %>
+    <p>
+      <%= link_to "Show this dislike", dislike %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New dislike", new_dislike_path %>

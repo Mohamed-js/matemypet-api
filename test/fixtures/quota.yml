@@ -1,0 +1,21 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  user_id: 1
+  subscription_id: 1
+  likes: 1
+  has_unlimited_likes: false
+  likes_updated: false
+  first_like_date: 2023-04-13 21:40:31
+  max_file_size: 1
+  pets: 1
+
+two:
+  user_id: 1
+  subscription_id: 1
+  likes: 1
+  has_unlimited_likes: false
+  likes_updated: false
+  first_like_date: 2023-04-13 21:40:31
+  max_file_size: 1
+  pets: 1

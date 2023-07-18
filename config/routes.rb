@@ -21,7 +21,6 @@ Rails.application.routes.draw do
 
   namespace :api do
     namespace :v1 do
-      root "trials#index"
       resources :registrations, only: %i[create update] do
         collection do
           put 'verify_otp'

@@ -29,7 +29,7 @@ Rails.application.routes.draw do
         end
       end
       resources :sessions, only: %i[create destroy]
-      resources :users, only: %i[show update destory]do
+      resources :users, only: %i[show update destroy] do
         collection do
           get 'show_other'
         end
